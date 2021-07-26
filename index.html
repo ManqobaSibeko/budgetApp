@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+
+
+        /* @media screen(max-width(789px)) {
+            
+        } */
+        body{
+            max-width: 50%;
+            padding: 0 2rem;
+            text-transform: capitalize;
+  
+        }
+        header,main{
+            display: flex;
+            justify-content: space-between;
+            flex-basis: 50%;
+            padding: 1.5rem;
+
+        }
+
+        form{
+            display: block;
+            border: 4px black solid;
+            padding: 1.5rem;
+            min-width: 40%;
+
+        }
+        section{
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            text-align: center;
+        }
+
+        div{
+            margin: 0 2rem;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>budget app</h1>
+    <header>
+        <form action="" id="budgetForm">
+            <p>please enter your budget</p>
+            <input type="text" name="" id="budgetTxt">
+            <input type="submit" id="submitBtn" value="Calculate">
+    
+        </form>
+
+        
+        <section class="one">
+            <div>
+                <h2>budget</h2>
+                <h2 class="budgetAmount"></h2>
+            </div>
+            <div>
+                <h2>Expenses</h2>
+                <h2 class="expenseAmount"></h2>
+            </div>
+            <div>
+                <h2>balance</h2>
+                <h2 class="balanceAmount"></h2>
+            </div>
+            
+        </section>
+
+    </header>
+
+    <main>
+        <form action="" id="expenseForm">
+            <p>please enter your expense</p>
+            <input type="text" name="" id="expenseTitle">
+            <p>please enter expense amount</p>
+            <input type="text" name="" id="expenseTxt">
+            <input type="submit" value="add expense">
+    
+        </form>
+    
+        <section>
+            <div>
+                <h3>expense title</h3>
+                <ul class="expense">
+    
+                </ul>
+    
+               
+                <h2 ></h2>
+            </div>
+            <div>
+                <h4>Expenses value</h4>
+                <ul class="expensePrice">
+                </ul>
+                
+            </div>
+            
+        </section>    
+
+    </main>
+
+    <button>Clear all</button>
+
+   
+   
+
+
+    <script src="app.js"></script>
+</body>
+</html>
