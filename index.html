@@ -14,9 +14,11 @@
             
         } */
         body{
-            max-width: 50%;
+            max-width: 60%;
             padding: 0 2rem;
             text-transform: capitalize;
+
+            margin: auto ;
   
         }
         header,main{
@@ -43,6 +45,34 @@
 
         div{
             margin: 0 2rem;
+        }
+        h1{
+            text-align: center;
+        }
+
+        @media all and (max-width:930px){
+            header,main{
+            display: block;
+            padding: 1.5rem 0;
+
+        }
+
+        section{
+            flex-shrink: inherit;
+        }
+
+        div{
+            display: inline-block;
+            margin: 0 ;
+        }
+
+        form{
+            min-width: none;
+
+        }
+
+        
+
         }
     </style>
 </head>
